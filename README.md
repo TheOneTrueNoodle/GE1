@@ -5,7 +5,7 @@ Our plan is to have a very simple looking microwave, with an additional set of b
 
 Erin Buttons:
 1. Creates a tentacle
-2. Changes textures
+2. Causes a disco inside the microwave (You are not invited and the food will have fun)
 3. opens/closes the microwave door
 4. Randomises hologram texture
 5. Animates tentacle
@@ -15,6 +15,6 @@ Ryan Buttons:
 2. Rotates food inside microwave
 3. Shoots food out the microwave (removes food)
 4. Explode the food violently
-5. Causes a disco inside the microwave (You are not invited and the food will have fun)
+5. Changes textures
 
 The microwave will be interactable in both AR and VR with two seperate builds, a vr build and an ar build. 
