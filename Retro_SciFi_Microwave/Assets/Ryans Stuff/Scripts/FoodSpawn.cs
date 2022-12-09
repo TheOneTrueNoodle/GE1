@@ -23,6 +23,14 @@ public class FoodSpawn : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            SpawnFood();
+        }
+    }
+
     private void SpawnFood()
     {
         if(FoodPrefabs == null) { return; }
