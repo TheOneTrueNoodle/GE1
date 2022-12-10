@@ -6,10 +6,17 @@ public class RotationPlates : MonoBehaviour
 {
     [Header("Rotation Values")]
     [SerializeField] private float rotationSpeed = 10f;
+    [SerializeField] private float blenderSpeed = 10f;
+    private float currentSpeed;
     [SerializeField] private Rigidbody rotationPlate1;
     [SerializeField] private Rigidbody rotationPlate2;
 
     private bool rotating = false;
+
+    private void Start()
+    {
+        currentSpeed = rotationSpeed;
+    }
 
     private void Update()
     {
@@ -17,14 +24,18 @@ public class RotationPlates : MonoBehaviour
         {
             toggleRotation();
         }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            toggleBlenderMode();
+        }
     }
 
     private void FixedUpdate()
     {
         if (rotating)
         {
-            rotationPlate1.angularVelocity = new Vector3(0f, rotationSpeed, 0f);
-            rotationPlate2.angularVelocity = new Vector3(0f, rotationSpeed, 0f);
+            rotationPlate1.angularVelocity = new Vector3(0f, currentSpeed, 0f);
+            rotationPlate2.angularVelocity = new Vector3(0f, currentSpeed, 0f);
         }
         else
         {
@@ -42,6 +53,18 @@ public class RotationPlates : MonoBehaviour
         else
         {
             rotating = true;
+        }
+    }
+
+    public void toggleBlenderMode()
+    {
+        if(currentSpeed != blenderSpeed)
+        {
+            currentSpeed = blenderSpeed;
+        }
+        else
+        {
+            currentSpeed = rotationSpeed;
         }
     }
 }

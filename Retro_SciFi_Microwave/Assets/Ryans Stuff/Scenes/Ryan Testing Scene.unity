@@ -3677,6 +3677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 3
+  blenderSpeed: 200
   rotationPlate1: {fileID: 609252067}
   rotationPlate2: {fileID: 2018668062}
 --- !u!1 &1647266829
