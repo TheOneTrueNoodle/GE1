@@ -31,7 +31,7 @@ public class FoodSpawn : MonoBehaviour
         }
     }
 
-    private void SpawnFood()
+    public void SpawnFood()
     {
         if(FoodPrefabs == null) { return; }
 
