@@ -6,8 +6,8 @@ public class RotationPlates : MonoBehaviour
 {
     [Header("Rotation Values")]
     [SerializeField] private float rotationSpeed = 10f;
-    [SerializeField] private GameObject rotationPlate1;
-    [SerializeField] private GameObject rotationPlate2;
+    [SerializeField] private Rigidbody rotationPlate1;
+    [SerializeField] private Rigidbody rotationPlate2;
 
     private bool rotating = false;
 
@@ -23,8 +23,8 @@ public class RotationPlates : MonoBehaviour
     {
         if (rotating)
         {
-            rotationPlate1.transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
-            rotationPlate2.transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
+            rotationPlate1.angularVelocity = new Vector3(0f, rotationSpeed, 0f);
+            rotationPlate2.angularVelocity = new Vector3(0f, rotationSpeed, 0f);
         }
     }
 
