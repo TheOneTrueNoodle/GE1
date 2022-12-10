@@ -26,6 +26,11 @@ public class RotationPlates : MonoBehaviour
             rotationPlate1.angularVelocity = new Vector3(0f, rotationSpeed, 0f);
             rotationPlate2.angularVelocity = new Vector3(0f, rotationSpeed, 0f);
         }
+        else
+        {
+            rotationPlate1.angularVelocity = new Vector3(0f, 0f, 0f);
+            rotationPlate2.angularVelocity = new Vector3(0f, 0f, 0f);
+        }
     }
 
     public void toggleRotation()
