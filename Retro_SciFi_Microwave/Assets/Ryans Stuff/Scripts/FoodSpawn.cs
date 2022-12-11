@@ -14,6 +14,12 @@ public class FoodSpawn : MonoBehaviour
 
     private int NextFood;
 
+    [Header("Food Ejection Variables")]
+    public Transform ejectTransform;
+    public GameObject forceSource;
+    public float minForce = 10f;
+    public float maxForce = 100f;
+
     private void Start()
     {
         if(FoodPrefabs != null)
@@ -28,6 +34,10 @@ public class FoodSpawn : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.T))
         {
             SpawnFood();
+        }
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            FoodEject();
         }
     }
 
@@ -51,6 +61,18 @@ public class FoodSpawn : MonoBehaviour
             int randomIndex = Random.Range(i, FoodPrefabs.Count);
             FoodPrefabs[i] = FoodPrefabs[randomIndex];
             FoodPrefabs[randomIndex] = temp;
+        }
+    }
+
+    public void FoodEject()
+    {
+        foreach (GameObject obj in SpawnedFood)
+        {
+            Rigidbody rb = obj.GetComponent<Rigidbody>();
+            Vector3 direction = forceSource.transform.position - obj.transform.position;
+            float force = Random.Range(minForce, maxForce);
+            rb.AddForce(direction.normalized * force);
+            obj.transform.position = ejectTransform.position;
         }
     }
 }
