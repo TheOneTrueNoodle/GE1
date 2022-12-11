@@ -3750,6 +3750,10 @@ MonoBehaviour:
   forceSource: {fileID: 663361159}
   minForce: 100
   maxForce: 1000
+  minExplosionForce: 50
+  maxExplosionForce: 100
+  explosionRadius: 20
+  explosionUpward: 0
 --- !u!4 &1647266831
 Transform:
   m_ObjectHideFlags: 0

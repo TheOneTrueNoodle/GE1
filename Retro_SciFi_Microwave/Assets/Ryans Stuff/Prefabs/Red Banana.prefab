@@ -4461,6 +4461,7 @@ GameObject:
   - component: {fileID: 1223407020051874414}
   - component: {fileID: 1223407020051874408}
   - component: {fileID: 1223407020051874415}
+  - component: {fileID: 2222775768877972983}
   m_Layer: 0
   m_Name: Red Banana
   m_TagString: Untagged
@@ -4483,7 +4484,7 @@ Transform:
   - {fileID: 1223407018501092050}
   - {fileID: 1223407019304077844}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1, y: 0, z: 0}
 --- !u!54 &1223407020051874408
 Rigidbody:
@@ -4515,3 +4516,18 @@ CapsuleCollider:
   m_Height: 0.8
   m_Direction: 1
   m_Center: {x: -0.02, y: 0.11, z: 0}
+--- !u!114 &2222775768877972983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223407020051874413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7df31c9d28484e4c8919916f117df29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pieces:
+  - {fileID: 1223407018501092052}
+  - {fileID: 1223407019304077851}

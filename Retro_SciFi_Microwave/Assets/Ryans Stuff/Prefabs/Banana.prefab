@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1395
+  m_VersionIndex: 1398
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2236,6 +2236,7 @@ GameObject:
   - component: {fileID: 1450485986586739024}
   - component: {fileID: 1450485986586739030}
   - component: {fileID: 1450485986586739025}
+  - component: {fileID: 5334051398094601006}
   m_Layer: 0
   m_Name: Banana
   m_TagString: Untagged
@@ -2258,7 +2259,7 @@ Transform:
   - {fileID: 1450485985589342700}
   - {fileID: 1450485986928675114}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1, y: 0, z: 0}
 --- !u!54 &1450485986586739030
 Rigidbody:
@@ -2290,6 +2291,21 @@ CapsuleCollider:
   m_Height: 0.8
   m_Direction: 1
   m_Center: {x: -0.02, y: 0.11, z: 0}
+--- !u!114 &5334051398094601006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450485986586739027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7df31c9d28484e4c8919916f117df29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pieces:
+  - {fileID: 1450485985589342698}
+  - {fileID: 1450485986928675109}
 --- !u!1 &1450485986928675109
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,7 +4415,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1398
+  m_VersionIndex: 1401
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
