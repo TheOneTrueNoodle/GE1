@@ -72,7 +72,6 @@ public class FoodSpawn : MonoBehaviour
         foreach (GameObject obj in EjectableFood)
         {
             Rigidbody rb = obj.GetComponent<Rigidbody>();
-            rb.velocity = Vector3.zero;
             Vector3 direction = forceSource.transform.position - obj.transform.position;
             float force = Random.Range(minForce, maxForce);
             rb.AddForce(direction.normalized * force);
