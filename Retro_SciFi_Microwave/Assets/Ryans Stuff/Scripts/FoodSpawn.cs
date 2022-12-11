@@ -8,6 +8,7 @@ public class FoodSpawn : MonoBehaviour
     [SerializeField] private List<GameObject> FoodPrefabs;
     [Header("List of Spawned Foods")]
     public List<GameObject> SpawnedFood;
+    [HideInInspector] public List<GameObject> EjectableFood;
 
     [Header("Food Spawning Values")]
     [SerializeField] private Transform spawnTransform;
@@ -48,6 +49,7 @@ public class FoodSpawn : MonoBehaviour
         GameObject newFood = Instantiate(FoodPrefabs[NextFood]);
         newFood.transform.position = spawnTransform.position;
         SpawnedFood.Add(newFood);
+        EjectableFood.Add(newFood);
 
         NextFood++;
         if (NextFood >= FoodPrefabs.Count) { NextFood = 0; }
@@ -66,13 +68,16 @@ public class FoodSpawn : MonoBehaviour
 
     public void FoodEject()
     {
-        foreach (GameObject obj in SpawnedFood)
+        if(EjectableFood == null) { return; }
+        foreach (GameObject obj in EjectableFood)
         {
             Rigidbody rb = obj.GetComponent<Rigidbody>();
+            rb.velocity = Vector3.zero;
             Vector3 direction = forceSource.transform.position - obj.transform.position;
             float force = Random.Range(minForce, maxForce);
             rb.AddForce(direction.normalized * force);
             obj.transform.position = ejectTransform.position;
         }
+        EjectableFood.Clear();
     }
 }
