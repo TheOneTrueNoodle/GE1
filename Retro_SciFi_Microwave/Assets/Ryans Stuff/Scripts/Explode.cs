@@ -9,6 +9,8 @@ public class Explode : MonoBehaviour
     private bool Exploded;
     private Rigidbody rb;
 
+    [SerializeField] private ParticleSystem particleSys;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -17,6 +19,8 @@ public class Explode : MonoBehaviour
     public void explode(float force, float radius, float upward)
     {
         if (Exploded) { return; }
+
+        particleSys.Play();
 
         foreach(GameObject obj in pieces)
         {
