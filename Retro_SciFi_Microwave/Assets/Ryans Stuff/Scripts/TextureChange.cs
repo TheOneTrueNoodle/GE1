@@ -16,13 +16,16 @@ public class TextureChange : MonoBehaviour
 
     public void changeTexture()
     {
-        if(targetObject.material == newMaterial)
+        if(targetObject != null)
         {
-            targetObject.material = defaultMaterial;
-        }
-        else
-        {
-            targetObject.material = newMaterial;
+            if (targetObject.material == newMaterial)
+            {
+                targetObject.material = defaultMaterial;
+            }
+            else
+            {
+                targetObject.material = newMaterial;
+            }   
         }
     }
 }
