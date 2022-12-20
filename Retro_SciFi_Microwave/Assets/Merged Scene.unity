@@ -3550,6 +3550,10 @@ MonoBehaviour:
   forceSource: {fileID: 1589479157}
   minForce: 100
   maxForce: 1000
+  minExplosionForce: 100
+  maxExplosionForce: 500
+  explosionRadius: 5
+  explosionUpward: 0
 --- !u!1 &728523988
 GameObject:
   m_ObjectHideFlags: 0
