@@ -21,6 +21,12 @@ public class FoodSpawn : MonoBehaviour
     public float minForce = 10f;
     public float maxForce = 100f;
 
+    [Header("Explosion Variables")]
+    [SerializeField] private float minExplosionForce;
+    [SerializeField] private float maxExplosionForce;
+    [SerializeField] private float explosionRadius = 5.0f;
+    [SerializeField] private float explosionUpward = 0.0f;
+
     private void Start()
     {
         if(FoodPrefabs != null)
@@ -39,6 +45,10 @@ public class FoodSpawn : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
         {
             FoodEject();
+        }
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            ExplodeFood();
         }
     }
 
@@ -78,5 +88,15 @@ public class FoodSpawn : MonoBehaviour
             obj.transform.position = ejectTransform.position;
         }
         EjectableFood.Clear();
+    }
+
+    public void ExplodeFood()
+    {
+        foreach(GameObject obj in SpawnedFood)
+        {
+            Explode objExplode = obj.GetComponent<Explode>();
+            float force = Random.Range(minExplosionForce, maxExplosionForce);
+            objExplode.explode(force, explosionRadius, explosionUpward);
+        }
     }
 }
