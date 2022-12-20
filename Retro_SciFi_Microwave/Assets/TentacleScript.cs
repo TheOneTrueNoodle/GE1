@@ -12,12 +12,17 @@ public class TentacleScript : MonoBehaviour
         transform.localScale = new Vector3(0, 0, 0);
     }
 
-    private void Update()
+ /*   private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
-        {
+        {                                       Tentacle test part for development outside of vr
             StartCoroutine(Activate());
         }
+    } */
+
+    public void ActivateTentacle()
+    {
+        StartCoroutine(Activate());
     }
 
     private IEnumerator Activate()

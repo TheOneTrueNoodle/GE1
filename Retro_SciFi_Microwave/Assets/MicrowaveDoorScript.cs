@@ -8,15 +8,12 @@ public class MicrowaveDoorScript : MonoBehaviour
     private Vector3 currentpos;
    
     // Update is called once per frame
-    void Update()
+    public void OpenDoor()
     {
-        if(Input.GetKeyDown(KeyCode.O))
-        {
-            StartCoroutine(Activate());
-        }
-    } 
+        StartCoroutine(Activate());
+    }
 
-    public IEnumerator Activate()
+    private IEnumerator Activate()
     {
         currentpos = transform.position;
         if (IsOpen == false)
