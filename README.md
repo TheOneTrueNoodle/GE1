@@ -8,7 +8,7 @@ Class Group: TU 984 (DT 508)
 
 Video: 
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+[![YouTube](http://img.youtube.com/vi/GrGJKI5P_Zw/0.jpg)](https://www.youtube.com/watch?v=GrGJKI5P_Zw)
 
 # Description of the project
 
@@ -16,7 +16,8 @@ We have created a futuristic household microwave, installed with a variety of st
 
 # Instructions for use
 
-
+- The player must aim with either right or left hand and press the trigger and grip buttons to activate each microwave button
+- each microwave button does something unique and shows a skill we have learned through programming!
 
 # How it works
 
