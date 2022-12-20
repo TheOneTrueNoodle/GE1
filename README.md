@@ -18,3 +18,9 @@ Ryan Buttons:
 5. Changes textures
 
 The microwave will be interactable in both AR and VR with two seperate builds, a vr build and an ar build. 
+
+I learned how to use procedural animation using the animation rigging 
+I added the package and added the chain Inverse kinematics, i modeled the tentacle and used bones and fed those bones into the ik
+I then targeted the IK to the players hand allowing the tentacle to follow the hand
+
+I am most proud of the shader graph hologram effect 
