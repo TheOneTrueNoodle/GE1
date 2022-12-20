@@ -57,7 +57,7 @@ Most of what I did in this project was pretty simple, and didnt cause any major 
 
 #### Erin
 
-Write your stuff here IG idfk XD
+I was proud of the tentacle procedural animation i did, it was quite simple looking at it but looked like a very hard to do, im glad i finally achieved the ability to do it. i added a chain inverse kinematic to the tentacle so it follows the players hand like a friend.
 
 # What I learned
 
@@ -70,7 +70,7 @@ The biggest thing I learned was how to use UnityEvents in scripts. Ive used them
 
 #### Erin
 
-Write your stuff here IG idfk XD
+I learned the tentacle inverse kinematics and how to do animation rigging with procedural generation. Although i did have to model the tentacle i believe i would be able to fake bones and use just cubes next time, this would be proper.
 
 # Proposal submitted earlier can go here:
 
