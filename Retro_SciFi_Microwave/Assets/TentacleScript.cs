@@ -7,6 +7,11 @@ public class TentacleScript : MonoBehaviour
     private bool IsActive = true;
     private Vector3 CurrentScale;
 
+    private void Start()
+    {
+        transform.localScale = new Vector3(0, 0, 0);
+    }
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
