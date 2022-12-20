@@ -8839,7 +8839,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-596546
+  m_Name: pb_Mesh34144
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -11940,7 +11940,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-77700
+  m_Name: pb_Mesh34188
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -12105,7 +12105,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-501894
+  m_Name: pb_Mesh34218
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -12270,7 +12270,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-213402
+  m_Name: pb_Mesh34158
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -12687,6 +12687,10 @@ MonoBehaviour:
   forceSource: {fileID: 663361159}
   minForce: 100
   maxForce: 1000
+  minExplosionForce: 0
+  maxExplosionForce: 0
+  explosionRadius: 5
+  explosionUpward: 0
 --- !u!4 &1647266831
 Transform:
   m_ObjectHideFlags: 0
