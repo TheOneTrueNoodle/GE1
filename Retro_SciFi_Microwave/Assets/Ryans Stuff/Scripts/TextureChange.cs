@@ -14,6 +14,14 @@ public class TextureChange : MonoBehaviour
         defaultMaterial = targetObject.material;
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.U))
+        {
+            changeTexture();
+        }
+    }
+
     public void changeTexture()
     {
         if(targetObject != null)

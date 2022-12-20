@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3488,6 +3488,12 @@ Transform:
   m_Father: {fileID: 711194171}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &670153082 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6209297712205379352, guid: 17405f2f645023a48817ea8d42908e5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2113932284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &711194170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,6 +4337,26 @@ Transform:
   m_Father: {fileID: 711194171}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1679914583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: 2d57d6be3157c4d4fad02e87006aa2b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1848242877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1679914587
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679914583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4493585093827132993, guid: 2d57d6be3157c4d4fad02e87006aa2b7, type: 3}
 --- !u!43 &1696776738
 Mesh:
   m_ObjectHideFlags: 0
@@ -4952,6 +4978,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1413489490}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d57d6be3157c4d4fad02e87006aa2b7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1894545426}
   m_SourcePrefab: {fileID: 100100000, guid: 2d57d6be3157c4d4fad02e87006aa2b7, type: 3}
 --- !u!4 &1848242878 stripped
 Transform:
@@ -4959,6 +4989,72 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1848242877}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1862760434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 2d57d6be3157c4d4fad02e87006aa2b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1848242877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1862760438
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862760434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 2d57d6be3157c4d4fad02e87006aa2b7, type: 3}
+--- !u!1 &1894545425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1894545426}
+  - component: {fileID: 1894545427}
+  m_Layer: 0
+  m_Name: Texture Change
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1894545426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894545425}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1848242878}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1894545427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894545425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255b8971d087ded42ba6bac53f61dd0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 670153082}
+  newMaterial: {fileID: 2100000, guid: c539e2a70c8829848af8632f87f17f43, type: 2}
 --- !u!1 &1899044530
 GameObject:
   m_ObjectHideFlags: 0
